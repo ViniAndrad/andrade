@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --rosa-padrao: #ff7289;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 192, 203, 0.582);
+    transition: background-color linear 0.3s;
+    text-align: center;
+}
+
+.center-div, .center-div-cinema {
+    width: 90%;
+    max-width: 450px;
+    min-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.514);
+    padding: 1rem;
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.center-div {
+    height: 400px;
+}
+
+.center-div-cinema {
+    height: 300px;
+}
+
+.center-div-cinema.thirteenth-message {
+    display: none;
+}
+
+.center-div__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.center-div__title, .center-div__description {
+    font-size: 1.5rem;
+    color: var(--rosa-padrao);
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.center-div__description {
+    font-size: 1rem;
+}
+
+.center-div__form {
+    width: 100%;
+}
+    
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-input__label {
+    text-align: start;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: var(--rosa-padrao);
+    margin-bottom: 3px;
+}
+
+.form-input__input {
+    padding: 0.6rem 0.3rem;
+    border: 1px solid var(--rosa-padrao);
+    border-radius: 3px;
+}
+
+.center-div__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button, .button-cinema {
+    font-weight: bolder;
+    font-size: 0.8em;
+    border-radius: 9px;
+    box-shadow: 0 0 3px 0 rgba(231, 66, 66, 0.705);
+    border: none;
+    background-color: var(--rosa-padrao);
+    color: white;
+}
+
+.button {
+    padding: 0.7rem 3rem;
+}
+
+.button-cinema {
+    padding: 0.7rem 1rem;
+}
+
+.first-message, 
+.second-message,
+.third-message,
+.fourth-message,
+.fifth-message,
+.sixth-message,
+.seventh-message,
+.eighth-message,
+.ninth-message,
+.tenth-message,
+.eleventh-message,
+.twelvth-message {
+    text-align: center;
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+/* .tenth-message,
+.eleventh-message,
+.twelvth-message {
+    color: black;
+} */
