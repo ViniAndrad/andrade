@@ -8,8 +8,8 @@ const sobrenomeInput = document.getElementById('sobrenome');
 verifyBtn.addEventListener('click', verifyInput);
 
 function verifyInput() {
-    const nome = nomeInput.value.toLowerCase();
-    const sobrenome = sobrenomeInput.value.toLowerCase();
+    const nome = nomeInput.value.toLowerCase().trim();
+    const sobrenome = sobrenomeInput.value.toLowerCase().trim();
 
     if (!nome || !sobrenome) {
         alert("insira as informações por favor");
