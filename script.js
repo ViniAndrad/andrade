@@ -101,6 +101,10 @@ function showDialog(classname, delay) {
             document.getElementById('legoMusic').play();
         }
 
+        if (classname === ".thirteenth-message") {
+            container.style.backgroundColor = "#ffc0cb"
+        }
+
         document.querySelector(classname).style.display = "block";
         lastElement = classname;
     }, delay);
